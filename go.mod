@@ -1,10 +1,11 @@
-module test
+module template
 
 go 1.21.4
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	github.com/zeddy-go/ginx v0.0.0-20231114060908-afd832784daf
+	github.com/zeddy-go/core v0.0.0-20231115105301-ba2768e63d55
+	github.com/zeddy-go/ginx v0.0.0-20231115105909-89c3d5cf992c
 )
 
 require (
@@ -29,7 +30,6 @@ require (
 	github.com/pelletier/go-toml/v2 v2.1.0 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.11 // indirect
-	github.com/zeddy-go/core v0.0.0-20231114060447-563e608b2590 // indirect
 	golang.org/x/arch v0.6.0 // indirect
 	golang.org/x/crypto v0.15.0 // indirect
 	golang.org/x/net v0.18.0 // indirect
