@@ -249,6 +249,8 @@ github.com/zeddy-go/core v0.0.0-20231116090847-22de8f61ee82 h1:GHYMELZYCC/CoNRG5
 github.com/zeddy-go/core v0.0.0-20231116090847-22de8f61ee82/go.mod h1:cYucy+2IfYgB8dhbmSWsmEwtRkHXww7kf4fAbLpGXHE=
 github.com/zeddy-go/database v0.0.0-20231116091121-0c2121481ce4 h1:DrBpqcsNFnGTNHu+w3ZUnT7SaJG8xDjCIZ1ASdFLxMk=
 github.com/zeddy-go/database v0.0.0-20231116091121-0c2121481ce4/go.mod h1:EdZ+/6o926AiZhWBui6e/1mIDm2rQIReumbu00osXuo=
+github.com/zeddy-go/database v0.0.0-20231116093409-e87d7f15f7c4 h1:7l8d0ePBWYl4qPNZ/kDme6WQ2zXSWMUgAfJuR9SvqSY=
+github.com/zeddy-go/database v0.0.0-20231116093409-e87d7f15f7c4/go.mod h1:EdZ+/6o926AiZhWBui6e/1mIDm2rQIReumbu00osXuo=
 github.com/zeddy-go/ginx v0.0.0-20231116091322-7a4be218e6ce h1:1V+F3IETCGth7e2Sp9RnFDO6PK7t0nEDvxvU6LaSwO4=
 github.com/zeddy-go/ginx v0.0.0-20231116091322-7a4be218e6ce/go.mod h1:fFZhU1x/R+ZkBy2FVQUlcl4FpPHS43Zo5C0KIcD/t/g=
 go.opencensus.io v0.21.0/go.mod h1:mSImk1erAIZhrmZN+AvHh14ztQfjbGwt4TtuofqLduU=
