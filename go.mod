@@ -4,8 +4,8 @@ go 1.21.4
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	github.com/zeddy-go/core v0.0.0-20231115105301-ba2768e63d55
-	github.com/zeddy-go/ginx v0.0.0-20231115105909-89c3d5cf992c
+	github.com/zeddy-go/core v0.0.0-20231116034040-8f54a70fdd8b
+	github.com/zeddy-go/ginx v0.0.0-20231116060730-ddc8b36e3820
 )
 
 require (
