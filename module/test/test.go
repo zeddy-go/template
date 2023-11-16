@@ -7,7 +7,8 @@ import (
 	"github.com/zeddy-go/core/contract"
 	"github.com/zeddy-go/ginx"
 	"template/module/test/infra/domain"
-	_ "template/module/test/infra/repository"
+	"template/module/test/infra/migration"
+	"template/module/test/infra/repository"
 )
 
 type req struct {
@@ -56,4 +57,8 @@ func (m Module) Init() {
 			B: 23,
 		}
 	})
+
+	container.Register(repository.NewUserRepository)
+
+	container.Invoke(migration.RegisterMigration)
 }

@@ -5,9 +5,9 @@ go 1.21.4
 require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/spf13/viper v1.17.0
-	github.com/zeddy-go/core v0.0.0-20231116090847-22de8f61ee82
-	github.com/zeddy-go/database v0.0.0-20231116093409-e87d7f15f7c4
-	github.com/zeddy-go/ginx v0.0.0-20231116091322-7a4be218e6ce
+	github.com/zeddy-go/core v0.0.0-20231116151703-d1e4bb190592
+	github.com/zeddy-go/database v0.0.0-20231116152121-cc925157ab9f
+	github.com/zeddy-go/ginx v0.0.0-20231116152122-6f58c009e5a1
 	gorm.io/gorm v1.25.5
 )
 
@@ -23,7 +23,10 @@ require (
 	github.com/go-playground/validator/v10 v10.16.0 // indirect
 	github.com/go-sql-driver/mysql v1.7.0 // indirect
 	github.com/goccy/go-json v0.10.2 // indirect
+	github.com/golang-migrate/migrate/v4 v4.16.2 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/hashicorp/errwrap v1.1.0 // indirect
+	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
@@ -47,6 +50,7 @@ require (
 	github.com/timandy/routine v1.1.3-0.20231016061408-9ac560235b59 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.11 // indirect
+	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/arch v0.6.0 // indirect
 	golang.org/x/crypto v0.15.0 // indirect
