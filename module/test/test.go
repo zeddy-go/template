@@ -6,6 +6,8 @@ import (
 	"github.com/zeddy-go/core/container"
 	"github.com/zeddy-go/core/contract"
 	"github.com/zeddy-go/ginx"
+	"template/module/test/infra/domain"
+	_ "template/module/test/infra/repository"
 )
 
 type req struct {
@@ -19,8 +21,14 @@ type something struct {
 type Module struct{}
 
 func (m Module) RegisterRoute(r contract.IRouter) {
-	r.GET("/test", func(ctx *gin.Context, a req) (meta ginx.IMeta, data any, err error) {
-		fmt.Printf("%+v\n", a)
+	r.GET("/test", func(ctx *gin.Context, a req, repository domain.IUserRepository) (meta ginx.IMeta, data any, err error) {
+		//fmt.Printf("%+v\n", a)
+		list, err := repository.List()
+		if err != nil {
+			panic(err)
+		}
+		println(len(list))
+		fmt.Printf("%+v\n", list[0])
 		return &ginx.Meta{
 			Total:   20,
 			PerPage: 10,
