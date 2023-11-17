@@ -1,7 +1,6 @@
 package main
 
 import (
-	"github.com/zeddy-go/core/container"
 	"github.com/zeddy-go/database/migrate"
 	"github.com/zeddy-go/database/wgorm"
 	"github.com/zeddy-go/ginx"
@@ -18,12 +17,7 @@ func main() {
 		&test.Module{},
 	)
 
-	container.Invoke(func(m migrate.IMigrator) {
-		err := m.Migrate()
-		if err != nil {
-			panic(err)
-		}
-	})
+	svr.Boot()
 
-	svr.Run()
+	svr.Serve()
 }

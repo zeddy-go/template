@@ -15,10 +15,6 @@ type req struct {
 	A int `form:"a" json:"a"`
 }
 
-type something struct {
-	B int
-}
-
 type Module struct{}
 
 func (m Module) RegisterRoute(r contract.IRouter) {
@@ -41,10 +37,6 @@ func (m Module) RegisterRoute(r contract.IRouter) {
 		fmt.Printf("%+v\n", b)
 		return gin.H{"test": true}, nil
 	})
-}
-
-func (m Module) Register(subs ...contract.IModule) {
-	panic("implement me")
 }
 
 type Something struct {
