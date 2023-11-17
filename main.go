@@ -10,6 +10,7 @@ import (
 
 func main() {
 	svr := ginx.NewModule()
+	svr.Init()
 	svr.Register(
 		&config.Module{},
 		&wgorm.Module{},

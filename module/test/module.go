@@ -10,11 +10,9 @@ import (
 
 type Module struct{}
 
-func (m Module) RegisterRoute(r contract.IRouter) {
-	container.Invoke(func(testHandler *handler.TestHandler) {
-		r.GET("/test", testHandler.TestGet)
-		r.POST("/test", testHandler.TestPost)
-	})
+func (m Module) RegisterRoute(r contract.IRouter, testHandler *handler.TestHandler) {
+	r.GET("/test", testHandler.TestGet)
+	r.POST("/test", testHandler.TestPost)
 }
 
 func (m Module) Init() {
