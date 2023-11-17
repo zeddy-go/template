@@ -4,21 +4,13 @@ import (
 	_ "embed"
 	"github.com/spf13/viper"
 	"github.com/zeddy-go/core/container"
-	"github.com/zeddy-go/core/contract"
 	"strings"
 )
 
 //go:embed config.yaml
 var conf string
 
-type Module struct{}
-
-func (m Module) Register(subs ...contract.IModule) {
-	//TODO implement me
-	panic("implement me")
-}
-
-func (m Module) Init() {
+func init() {
 	container.Register(func() *viper.Viper {
 		c := viper.New()
 		c.SetConfigType("yaml")
