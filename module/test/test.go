@@ -6,7 +6,7 @@ import (
 	"github.com/zeddy-go/core/container"
 	"github.com/zeddy-go/core/contract"
 	"github.com/zeddy-go/ginx"
-	"template/module/test/infra/domain"
+	"template/module/test/domain"
 	"template/module/test/infra/migration"
 	"template/module/test/infra/repository"
 )
