@@ -281,10 +281,16 @@ github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9de
 github.com/yuin/goldmark v1.2.1/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/zeddy-go/core v0.0.0-20231117060355-7ceecab56e10 h1:ukxocU3UMT8wqghCWDjG5LMzUsSJmEKqpMRAqyUKwoc=
 github.com/zeddy-go/core v0.0.0-20231117060355-7ceecab56e10/go.mod h1:cYucy+2IfYgB8dhbmSWsmEwtRkHXww7kf4fAbLpGXHE=
+github.com/zeddy-go/core v0.0.0-20231117085833-df32faf65aa3 h1:xXQtAsa8ekUj37GJs45zRUL7E7ooB2HawwlUAtrgviE=
+github.com/zeddy-go/core v0.0.0-20231117085833-df32faf65aa3/go.mod h1:cYucy+2IfYgB8dhbmSWsmEwtRkHXww7kf4fAbLpGXHE=
 github.com/zeddy-go/database v0.0.0-20231117060709-4f54cdfa2b41 h1:dJ83UIJtUpgZSazjOdPuXKTobkeXfHzyxsyyryqZup8=
 github.com/zeddy-go/database v0.0.0-20231117060709-4f54cdfa2b41/go.mod h1:F5K9UUssO0LYC57GKFPfSyIwIpjICjCTdTx+TnPkheY=
+github.com/zeddy-go/database v0.0.0-20231117090134-fbecc13d354b h1:f9lkykLOx7qwDkRDknfqRzdIWetblMTwiC3jjjWsJ1s=
+github.com/zeddy-go/database v0.0.0-20231117090134-fbecc13d354b/go.mod h1:chMuNSJmD5TkkoGyYHNxXyfwnUHFTYzoKpjaDSiqemY=
 github.com/zeddy-go/ginx v0.0.0-20231117060711-88bf210ad099 h1:sLscF3TGFQRRvnSd0WdZa3GxkALDxDnDHYhkB+gk5ew=
 github.com/zeddy-go/ginx v0.0.0-20231117060711-88bf210ad099/go.mod h1:qCcIgdhkYWymIJDrQ+/IMN11cL8gujzQ9y1GYv2SNQ8=
+github.com/zeddy-go/ginx v0.0.0-20231117090135-4c18ca62d092 h1:mVqzWliXBmQWl3khz3t4N2+xJbtbl+S0GfhV6qkKVI0=
+github.com/zeddy-go/ginx v0.0.0-20231117090135-4c18ca62d092/go.mod h1:NYKT6Grl+6ZTg5ooulDf5LS7UEYv4D8c8yPKYi5mUJo=
 go.opencensus.io v0.21.0/go.mod h1:mSImk1erAIZhrmZN+AvHh14ztQfjbGwt4TtuofqLduU=
 go.opencensus.io v0.22.0/go.mod h1:+kGneAE2xo2IficOXnaByMWTGM9T73dGwxeWcUqIpI8=
 go.opencensus.io v0.22.2/go.mod h1:yxeiOL68Rb0Xd1ddK5vPZ/oVn4vY4Ynel7k9FzqtOIw=
