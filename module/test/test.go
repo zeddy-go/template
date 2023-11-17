@@ -43,7 +43,7 @@ func (m Module) RegisterRoute(r contract.IRouter) {
 	})
 }
 
-func (m Module) Register(sub contract.IModule) {
+func (m Module) Register(subs ...contract.IModule) {
 	panic("implement me")
 }
 

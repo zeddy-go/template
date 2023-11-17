@@ -5,9 +5,9 @@ go 1.21.4
 require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/spf13/viper v1.17.0
-	github.com/zeddy-go/core v0.0.0-20231116151703-d1e4bb190592
-	github.com/zeddy-go/database v0.0.0-20231116152121-cc925157ab9f
-	github.com/zeddy-go/ginx v0.0.0-20231116152122-6f58c009e5a1
+	github.com/zeddy-go/core v0.0.0-20231117054426-34359e39c7ba
+	github.com/zeddy-go/database v0.0.0-20231117054921-56b2a412a018
+	github.com/zeddy-go/ginx v0.0.0-20231117054922-2796211f52a5
 	gorm.io/gorm v1.25.5
 )
 

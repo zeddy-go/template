@@ -13,7 +13,7 @@ var conf string
 
 type Module struct{}
 
-func (m Module) Register(sub contract.IModule) {
+func (m Module) Register(subs ...contract.IModule) {
 	//TODO implement me
 	panic("implement me")
 }

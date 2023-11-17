@@ -2,7 +2,6 @@ package main
 
 import (
 	"github.com/zeddy-go/core/container"
-	"github.com/zeddy-go/core/module"
 	"github.com/zeddy-go/database/migrate"
 	"github.com/zeddy-go/database/wgorm"
 	"github.com/zeddy-go/ginx"
@@ -10,19 +9,14 @@ import (
 	"template/module/test"
 )
 
-type req struct {
-	A int `form:"a" json:"a"`
-}
-
 func main() {
-	module.Init(
+	svr := ginx.NewModule()
+	svr.Register(
 		&config.Module{},
 		&wgorm.Module{},
 		&migrate.Module{},
+		&test.Module{},
 	)
-
-	svr := ginx.NewModule()
-	svr.Register(&test.Module{})
 
 	container.Invoke(func(m migrate.IMigrator) {
 		err := m.Migrate()
