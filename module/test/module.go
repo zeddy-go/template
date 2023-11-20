@@ -7,6 +7,7 @@ import (
 	"template/module/test/handler"
 	"template/module/test/infra/migration"
 	"template/module/test/infra/repository"
+	"template/module/test/infra/seed"
 )
 
 func NewModule() *Module {
@@ -24,6 +25,12 @@ func NewModule() *Module {
 	container.Register(handler.NewTestHandler)
 
 	container.Invoke(migration.RegisterMigration)
+	for _, item := range seed.Seeds {
+		_, err := container.Invoke(item)
+		if err != nil {
+			panic(err)
+		}
+	}
 
 	return m
 }
