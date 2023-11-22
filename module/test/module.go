@@ -25,18 +25,21 @@ func NewModule() *Module {
 	container.Register(handler.NewTestHandler)
 
 	container.Invoke(migration.RegisterMigration)
-	for _, item := range seed.Seeds {
-		_, err := container.Invoke(item)
-		if err != nil {
-			panic(err)
-		}
-	}
 
 	return m
 }
 
 type Module struct {
 	*module.BaseModule
+}
+
+func (m Module) Boot() {
+	for _, item := range seed.Seeds {
+		_, err := container.Invoke(item)
+		if err != nil {
+			panic(err)
+		}
+	}
 }
 
 func (m Module) RegisterRoute(r contract.IRouter, testHandler *handler.TestHandler) {

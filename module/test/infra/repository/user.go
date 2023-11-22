@@ -10,12 +10,12 @@ import (
 
 func NewUserRepository(db *wgorm.DBHolder) domain.IUserRepository {
 	return &UserRepository{
-		IRepository: &wgorm.Repository[model.User]{
+		IRepository: &wgorm.Repository[model.User, domain.User]{
 			IDBHolder: db,
 		},
 	}
 }
 
 type UserRepository struct {
-	database.IRepository[model.User, *gorm.DB]
+	database.IRepository[domain.User, *gorm.DB]
 }

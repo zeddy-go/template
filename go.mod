@@ -6,7 +6,7 @@ require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/spf13/viper v1.17.0
 	github.com/zeddy-go/core v0.0.0-20231120022232-88f425f915dd
-	github.com/zeddy-go/database v0.0.0-20231120022725-0c326626da03
+	github.com/zeddy-go/database v0.0.0-20231122075542-8ec894713a7d
 	github.com/zeddy-go/ginx v0.0.0-20231120022547-b31f13bb4a41
 	gorm.io/gorm v1.25.5
 )

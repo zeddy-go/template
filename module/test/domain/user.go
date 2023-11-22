@@ -3,9 +3,14 @@ package domain
 import (
 	"github.com/zeddy-go/database"
 	"gorm.io/gorm"
-	"template/module/test/infra/model"
 )
 
+type User struct {
+	ID       uint64
+	Username string
+	Password string
+}
+
 type IUserRepository interface {
-	database.IRepository[model.User, *gorm.DB]
+	database.IRepository[User, *gorm.DB]
 }
