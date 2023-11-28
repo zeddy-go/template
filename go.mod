@@ -5,9 +5,7 @@ go 1.21.4
 require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/spf13/viper v1.17.0
-	github.com/zeddy-go/core v0.0.0-20231123110732-53c6f2496c1b
-	github.com/zeddy-go/database v0.0.0-20231124022804-feac9adc191c
-	github.com/zeddy-go/ginx v0.0.0-20231120022547-b31f13bb4a41
+	github.com/zeddy-go/zeddy v0.0.0-20231128024111-98b3c8d5bcc6
 	gorm.io/gorm v1.25.5
 )
 
@@ -47,7 +45,7 @@ require (
 	github.com/spf13/cast v1.5.1 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
 	github.com/subosito/gotenv v1.6.0 // indirect
-	github.com/timandy/routine v1.1.3-0.20231016061408-9ac560235b59 // indirect
+	github.com/timandy/routine v1.1.3 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.2.11 // indirect
 	go.uber.org/atomic v1.9.0 // indirect

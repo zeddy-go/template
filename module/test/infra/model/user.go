@@ -1,6 +1,6 @@
 package model
 
-import "github.com/zeddy-go/database/wgorm"
+import "github.com/zeddy-go/zeddy/database/wgorm"
 
 type User struct {
 	wgorm.CommonField

@@ -1,8 +1,8 @@
 package repository
 
 import (
-	"github.com/zeddy-go/database"
-	"github.com/zeddy-go/database/wgorm"
+	"github.com/zeddy-go/zeddy/database"
+	"github.com/zeddy-go/zeddy/database/wgorm"
 	"gorm.io/gorm"
 	"template/module/test/domain"
 	"template/module/test/infra/model"

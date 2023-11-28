@@ -1,9 +1,9 @@
 package test
 
 import (
-	"github.com/zeddy-go/core/container"
-	"github.com/zeddy-go/core/contract"
-	"github.com/zeddy-go/core/module"
+	"github.com/zeddy-go/zeddy/container"
+	"github.com/zeddy-go/zeddy/contract"
+	"github.com/zeddy-go/zeddy/module"
 	"template/module/test/handler"
 	"template/module/test/infra/migration"
 	"template/module/test/infra/repository"

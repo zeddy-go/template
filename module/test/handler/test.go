@@ -3,7 +3,7 @@ package handler
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"github.com/zeddy-go/ginx"
+	"github.com/zeddy-go/zeddy/http/ginx"
 	"template/module/test/domain"
 )
 

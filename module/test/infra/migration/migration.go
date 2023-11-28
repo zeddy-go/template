@@ -2,7 +2,7 @@ package migration
 
 import (
 	"embed"
-	"github.com/zeddy-go/database/migrate"
+	"github.com/zeddy-go/zeddy/database/migrate"
 )
 
 //go:embed *.sql

@@ -2,7 +2,7 @@ package seed
 
 import (
 	"errors"
-	"github.com/zeddy-go/database"
+	"github.com/zeddy-go/zeddy/database"
 	"gorm.io/gorm"
 	"template/module/test/domain"
 )

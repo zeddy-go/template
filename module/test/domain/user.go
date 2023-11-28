@@ -1,7 +1,7 @@
 package domain
 
 import (
-	"github.com/zeddy-go/database"
+	"github.com/zeddy-go/zeddy/database"
 	"gorm.io/gorm"
 )
 

@@ -3,7 +3,7 @@ package config
 import (
 	_ "embed"
 	"github.com/spf13/viper"
-	"github.com/zeddy-go/core/container"
+	"github.com/zeddy-go/zeddy/container"
 	"strings"
 )
 
