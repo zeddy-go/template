@@ -2,9 +2,10 @@ package seed
 
 import (
 	"errors"
+	"template/module/user/domain"
+
 	"github.com/zeddy-go/zeddy/database"
 	"gorm.io/gorm"
-	"template/module/test/domain"
 )
 
 func SeedUser(userRepository domain.IUserRepository) error {

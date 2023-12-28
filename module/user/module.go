@@ -1,11 +1,11 @@
-package test
+package user
 
 import (
-	"template/module/test/domain"
-	"template/module/test/handler"
-	"template/module/test/infra/migration"
-	"template/module/test/infra/repository"
-	"template/module/test/infra/seed"
+	"template/module/user/domain"
+	"template/module/user/handler"
+	"template/module/user/infra/migration"
+	"template/module/user/infra/repository"
+	"template/module/user/infra/seed"
 
 	"github.com/zeddy-go/zeddy/container"
 	"github.com/zeddy-go/zeddy/contract"

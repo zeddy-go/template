@@ -1,11 +1,12 @@
 package main
 
 import (
+	_ "template/config"
+	"template/module/user"
+
 	"github.com/zeddy-go/zeddy/database/migrate"
 	"github.com/zeddy-go/zeddy/database/wgorm"
 	"github.com/zeddy-go/zeddy/http/ginx"
-	_ "template/config"
-	"template/module/test"
 )
 
 func main() {
@@ -14,7 +15,7 @@ func main() {
 	svr.Register(
 		wgorm.NewModule(),
 		migrate.NewModule(),
-		test.NewModule(),
+		user.NewModule(),
 	)
 
 	svr.Boot()

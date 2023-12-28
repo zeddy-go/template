@@ -1,11 +1,12 @@
 package repository
 
 import (
+	"template/module/user/domain"
+	"template/module/user/infra/model"
+
 	"github.com/zeddy-go/zeddy/database"
 	"github.com/zeddy-go/zeddy/database/wgorm"
 	"gorm.io/gorm"
-	"template/module/test/domain"
-	"template/module/test/infra/model"
 )
 
 func NewUserRepository(db *wgorm.DBHolder) domain.IUserRepository {

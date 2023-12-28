@@ -2,9 +2,10 @@ package handler
 
 import (
 	"fmt"
+	"template/module/user/domain"
+
 	"github.com/gin-gonic/gin"
 	"github.com/zeddy-go/zeddy/http/ginx"
-	"template/module/test/domain"
 )
 
 func NewTestHandler(userRepository domain.IUserRepository) *TestHandler {
