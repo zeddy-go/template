@@ -2,16 +2,17 @@ package config
 
 import (
 	_ "embed"
+	"strings"
+
 	"github.com/spf13/viper"
 	"github.com/zeddy-go/zeddy/container"
-	"strings"
 )
 
 //go:embed config.yaml
 var conf string
 
 func init() {
-	container.Register(func() *viper.Viper {
+	container.Bind[*viper.Viper](func() *viper.Viper {
 		c := viper.New()
 		c.SetConfigType("yaml")
 		err := c.ReadConfig(strings.NewReader(conf))

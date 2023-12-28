@@ -1,13 +1,15 @@
 package test
 
 import (
-	"github.com/zeddy-go/zeddy/container"
-	"github.com/zeddy-go/zeddy/contract"
-	"github.com/zeddy-go/zeddy/module"
+	"template/module/test/domain"
 	"template/module/test/handler"
 	"template/module/test/infra/migration"
 	"template/module/test/infra/repository"
 	"template/module/test/infra/seed"
+
+	"github.com/zeddy-go/zeddy/container"
+	"github.com/zeddy-go/zeddy/contract"
+	"github.com/zeddy-go/zeddy/module"
 )
 
 func NewModule() *Module {
@@ -15,14 +17,14 @@ func NewModule() *Module {
 		BaseModule: module.NewBaseModule("test"),
 	}
 
-	container.Register(func() *handler.Something {
+	container.Bind[*handler.Something](func() *handler.Something {
 		return &handler.Something{
 			B: 23,
 		}
 	})
 
-	container.Register(repository.NewUserRepository)
-	container.Register(handler.NewTestHandler)
+	container.Bind[domain.IUserRepository](repository.NewUserRepository)
+	container.Bind[*handler.TestHandler](handler.NewTestHandler)
 
 	container.Invoke(migration.RegisterMigration)
 
@@ -35,7 +37,7 @@ type Module struct {
 
 func (m Module) Boot() {
 	for _, item := range seed.Seeds {
-		_, err := container.Invoke(item)
+		err := container.Invoke(item)
 		if err != nil {
 			panic(err)
 		}
