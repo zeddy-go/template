@@ -2,6 +2,7 @@ package main
 
 import (
 	"github.com/zeddy-go/zeddy/app"
+	"log/slog"
 	_ "template/config"
 	"template/module/user"
 
@@ -19,6 +20,6 @@ func main() {
 	)
 	err := app.StartAndWait()
 	if err != nil {
-		panic(err)
+		slog.Warn("An error occurred", "error", err)
 	}
 }
