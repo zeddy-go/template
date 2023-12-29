@@ -5,7 +5,7 @@ go 1.21.4
 require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/spf13/viper v1.17.0
-	github.com/zeddy-go/zeddy v0.0.0-20231228064733-474a5481b939
+	github.com/zeddy-go/zeddy v0.0.0-20231229063057-a41407ab87eb
 	gorm.io/gorm v1.25.5
 )
 

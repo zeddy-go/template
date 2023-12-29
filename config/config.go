@@ -2,6 +2,8 @@ package config
 
 import (
 	_ "embed"
+	"log/slog"
+	"os"
 	"strings"
 
 	"github.com/spf13/viper"
@@ -12,7 +14,7 @@ import (
 var conf string
 
 func init() {
-	container.Bind[*viper.Viper](func() *viper.Viper {
+	err := container.Bind[*viper.Viper](func() *viper.Viper {
 		c := viper.New()
 		c.SetConfigType("yaml")
 		err := c.ReadConfig(strings.NewReader(conf))
@@ -23,4 +25,13 @@ func init() {
 		c.AutomaticEnv()
 		return c
 	})
+	if err != nil {
+		return
+	}
+
+	opts := &slog.HandlerOptions{
+		AddSource: true,
+	}
+
+	slog.SetDefault(slog.New(slog.NewJSONHandler(os.Stderr, opts)))
 }

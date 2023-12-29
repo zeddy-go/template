@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/zeddy-go/zeddy/app"
 	_ "template/config"
 	"template/module/user"
 
@@ -10,15 +11,14 @@ import (
 )
 
 func main() {
-	svr := ginx.NewModule()
-
-	svr.Register(
+	app.Use(
 		wgorm.NewModule(),
 		migrate.NewModule(),
+		ginx.NewModule(),
 		user.NewModule(),
 	)
-
-	svr.Boot()
-
-	svr.Serve()
+	err := app.StartAndWait()
+	if err != nil {
+		panic(err)
+	}
 }
