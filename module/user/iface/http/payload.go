@@ -1,4 +1,4 @@
-package handler
+package http
 
 type req struct {
 	A int `form:"a" json:"a"`
