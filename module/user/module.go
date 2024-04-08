@@ -8,15 +8,13 @@ import (
 )
 
 func NewModule() *Module {
-	m := &Module{
-		BaseModule: module.NewBaseModule("test"),
-	}
+	m := &Module{}
 
 	return m
 }
 
 type Module struct {
-	*module.BaseModule
+	module.BaseModule
 }
 
 func (m Module) Init() (err error) {
